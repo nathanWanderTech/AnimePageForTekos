@@ -4,6 +4,16 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 There are 2 version you can choose 3-hour version and revised version
 
+### The folder structure
+
+RevisedVersion Folder only contains Revised Version
+
+3-hour version code can be found in:
+src
+|Models
+|Services
+|Views
+
 ## Available Scripts
 
 In the project directory, you can run:
