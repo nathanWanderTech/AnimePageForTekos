@@ -1,5 +1,4 @@
-//redux
-export interface IAnime {
+export interface IAnimeR {
   mal_id: number;
   url: string;
   image_url: string;
@@ -17,5 +16,5 @@ export interface IAnime {
 
 export type ReduxAction = {
   type: string;
-  payload: {};
+  payload: any;
 };

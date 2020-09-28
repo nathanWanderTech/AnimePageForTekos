@@ -1,0 +1,12 @@
+.footer {
+  width: 100%;
+  height: 30px;
+  display: grid;
+  margin-top: 30px;
+  place-items: center;
+  background-color: black;
+  .content {
+    color: white;
+    font-size: 0.8rem;
+  }
+}

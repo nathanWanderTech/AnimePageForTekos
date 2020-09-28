@@ -1,5 +1,9 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+### Version
+
+There are 2 version you can choose 3-hour version and revised version
+
 ## Available Scripts
 
 In the project directory, you can run:
