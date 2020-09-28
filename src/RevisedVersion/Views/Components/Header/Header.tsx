@@ -1,7 +1,7 @@
 import React from "react";
-import { Container, Grid, Menu } from "semantic-ui-react";
-import AnimeList from "../AnimeList/AnimeList";
+import { Container, Menu } from "semantic-ui-react";
 import { Link } from "react-router-dom";
+import SearchBar from "../SearchBar/SearchBar";
 
 const Header = () => {
   return (
@@ -15,6 +15,9 @@ const Header = () => {
           <Menu.Item name="anime" />
         </Link>
         <Menu.Item name="manga" />
+        <Menu.Item name="">
+          <SearchBar />
+        </Menu.Item>
       </Menu>
     </Container>
   );

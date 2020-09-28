@@ -6,21 +6,29 @@ import "./style.scss";
 const Home = () => {
   return (
     <div className="home">
-      <Container textAlign="center">
-        <Header size="huge" color="purple">
-          Huge Header
-        </Header>
-        <Button color="youtube" size="huge">
-          <Link to="/AnimePage" style={{ color: "white" }}>
-            3-hour Version
-          </Link>
-        </Button>
-        <Button color="facebook" size="huge">
-          <Link to="/AnimeHomeR" style={{ color: "white" }}>
-            Revised Version
-          </Link>
-        </Button>
-      </Container>
+      <div>
+        <Container textAlign="center">
+          <Header size="huge" color="purple">
+            Choose site to visit
+          </Header>
+          <ul className="button-list">
+            <li>
+              <Button color="youtube" size="huge">
+                <Link to="/AnimePage" style={{ color: "white" }}>
+                  3-hour Version
+                </Link>
+              </Button>
+            </li>
+            <li>
+              <Button color="facebook" size="huge">
+                <Link to="/AnimeHomeR" style={{ color: "white" }}>
+                  Revised Version
+                </Link>
+              </Button>
+            </li>
+          </ul>
+        </Container>
+      </div>
     </div>
   );
 };

@@ -1,3 +1,10 @@
 .home {
-  margin-top: 20%;
+  height: 100%;
+  display: grid;
+  place-items: center;
+  .button-list {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+  }
 }

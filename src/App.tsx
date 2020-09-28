@@ -7,14 +7,12 @@ import AnimeHomeR from "./RevisedVersion/Views/Page/AnimeHomeR/AnimeHomeR";
 
 function App() {
   return (
-    <div>
-      <BrowserRouter>
-        <Route exact path="/AnimePage" component={AnimePage} />
-        <Route exact path="/Home" component={Home} />
-        <Route exact path="/" component={Home} />
-        <Route exact path="/AnimeHomeR" component={AnimeHomeR} />
-      </BrowserRouter>
-    </div>
+    <BrowserRouter>
+      <Route exact path="/AnimePage" component={AnimePage} />
+      <Route exact path="/Home" component={Home} />
+      <Route exact path="/" component={Home} />
+      <Route exact path="/AnimeHomeR" component={AnimeHomeR} />
+    </BrowserRouter>
   );
 }
 
