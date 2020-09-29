@@ -20,8 +20,6 @@ const PaginationComponent = () => {
       prevItem={{ content: <Icon name="angle left" />, icon: true }}
       nextItem={{ content: <Icon name="angle right" />, icon: true }}
       onPageChange={(event, data) => {
-        console.log(typeof data.activePage);
-
         Axios({
           method: "GET",
           url: apiCreator(data.activePage as number),

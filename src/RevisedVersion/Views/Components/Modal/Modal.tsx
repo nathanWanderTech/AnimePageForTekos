@@ -5,7 +5,6 @@ import "./style.scss";
 
 const ModalDetail = () => {
   const modalState = useSelector((state: any) => {
-    console.log(state.modalRReducer.selectedAnime);
     return state.modalRReducer;
   });
 

@@ -5,10 +5,11 @@ import Header from "../../Components/Header/Header";
 import PaginationComponent from "../../Components/Pagination/Pagination";
 import Modal from "../../Components/Modal/Modal";
 import "./style.scss";
+import { Container } from "semantic-ui-react";
 
 const AnimeHomeR = () => {
   return (
-    <>
+    <Container fluid={true}>
       <Header />
       <AnimeList />
       <div className="pagination">
@@ -16,7 +17,7 @@ const AnimeHomeR = () => {
       </div>
       <Footer />
       <Modal />
-    </>
+    </Container>
   );
 };
 

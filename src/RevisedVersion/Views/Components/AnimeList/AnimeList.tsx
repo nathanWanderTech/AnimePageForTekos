@@ -5,6 +5,8 @@ import { apiCreator } from "../../../Models/apiCreator";
 import axios from "axios";
 import { useDispatch, useSelector } from "react-redux";
 import { IAnimeR } from "../../../Models/type";
+import Filter from "../Filter/Filter";
+import "./style.scss";
 
 const AnimeList = () => {
   const dispatch = useDispatch();
@@ -36,14 +38,16 @@ const AnimeList = () => {
   };
 
   return (
-    <>
-      <Container>
+    <Container>
+      <div className="title-block">
         <h2>ANIME</h2>
-      </Container>
+        <Filter />
+      </div>
+
       <Grid container>
         <Grid.Row>{renderAnime()}</Grid.Row>
       </Grid>
-    </>
+    </Container>
   );
 };
 

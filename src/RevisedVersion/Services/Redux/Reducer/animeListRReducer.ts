@@ -19,6 +19,7 @@ const reducer = (state = initialState, action: any) => {
           currentPage: 1,
         },
       };
+
     case "GO_TO_PAGE":
       return {
         ...state,
@@ -28,6 +29,35 @@ const reducer = (state = initialState, action: any) => {
           currentPage: payload.currentPage,
         },
       };
+    case "SORT_Ascending":
+      let tempAsc = [...state.animeList];
+      tempAsc.sort((a: any, b: any) => {
+        const lowerA = a.title.toLowerCase();
+        const lowerB = b.title.toLowerCase();
+        if (lowerA < lowerB) {
+          return -1;
+        }
+        if (lowerA > lowerB) {
+          return 1;
+        }
+        return 0;
+      });
+      return { ...state, animeList: tempAsc };
+
+    case "SORT_Descending":
+      let tempDesc = [...state.animeList];
+      tempDesc.sort((a: any, b: any) => {
+        const lowerA = a.title.toLowerCase().replace(/\s/g, "");
+        const lowerB = b.title.toLowerCase().replace(/\s/g, "");
+        if (lowerA < lowerB) {
+          return 1;
+        }
+        if (lowerA > lowerB) {
+          return -1;
+        }
+        return 0;
+      });
+      return { ...state, animeList: tempDesc };
 
     default:
       return state;

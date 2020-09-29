@@ -50,7 +50,7 @@ const AnimeList = () => {
       .then((res) => {
         setAnimeStateList({
           list: res.data,
-          currentPage: animeStateList.currentPage + 1,
+          currentPage: animeStateList.currentPage - 1,
         });
       })
       .catch((err) => console.log(err));
